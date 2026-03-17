@@ -1,0 +1,272 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+
+:root {
+  --background: oklch(0.97 0.008 70);
+  --foreground: oklch(0.2 0 0);
+  --card: oklch(0.98 0.003 80);
+  --card-foreground: oklch(0.2 0 0);
+  --popover: oklch(0.98 0.003 80);
+  --popover-foreground: oklch(0.2 0 0);
+  --primary: oklch(0.2 0 0);
+  --primary-foreground: oklch(0.975 0.005 80);
+  --secondary: oklch(0.95 0.008 80);
+  --secondary-foreground: oklch(0.2 0 0);
+  --muted: oklch(0.93 0.01 80);
+  --muted-foreground: oklch(0.45 0.01 80);
+  --accent: oklch(0.55 0.05 50);
+  --accent-foreground: oklch(0.975 0.005 80);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --border: oklch(0.88 0.015 80);
+  --input: oklch(0.92 0.01 80);
+  --ring: oklch(0.4 0.02 80);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --radius: 0rem;
+  --sidebar: oklch(0.975 0.005 80);
+  --sidebar-foreground: oklch(0.2 0 0);
+  --sidebar-primary: oklch(0.2 0 0);
+  --sidebar-primary-foreground: oklch(0.975 0.005 80);
+  --sidebar-accent: oklch(0.95 0.008 80);
+  --sidebar-accent-foreground: oklch(0.2 0 0);
+  --sidebar-border: oklch(0.88 0.015 80);
+  --sidebar-ring: oklch(0.4 0.02 80);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.145 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.145 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.985 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.269 0 0);
+  --input: oklch(0.269 0 0);
+  --ring: oklch(0.439 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.439 0 0);
+}
+
+@theme inline {
+  --font-sans: var(--font-inter, 'Inter'), system-ui, sans-serif;
+  --font-serif: var(--font-playfair-display, 'Playfair Display'), Georgia, serif;
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  /* Offset anchor scroll targets below the fixed header (~88px) */
+  section[id] {
+    scroll-margin-top: 88px;
+  }
+}
+
+/* Gallery painting frame effect */
+.painting-frame {
+  box-shadow: 
+    0 4px 20px -4px rgba(0, 0, 0, 0.08),
+    0 8px 40px -8px rgba(0, 0, 0, 0.06);
+}
+
+.painting-frame:hover {
+  box-shadow: 
+    0 8px 30px -4px rgba(0, 0, 0, 0.12),
+    0 16px 60px -8px rgba(0, 0, 0, 0.08);
+}
+
+/* Gallery paintings - no frame, clean with 3D hover lift and shadow */
+.painting-frame-gallery {
+  position: relative;
+  box-shadow: 
+    0 4px 16px -4px rgba(0, 0, 0, 0.08),
+    0 8px 32px -8px rgba(0, 0, 0, 0.06);
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.painting-frame-gallery:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 
+    0 16px 48px -8px rgba(0, 0, 0, 0.15),
+    0 24px 64px -12px rgba(0, 0, 0, 0.12);
+}
+
+/* Painting overlay for title on hover */
+.painting-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 24px 16px 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.painting-frame-gallery:hover .painting-overlay {
+  opacity: 1;
+}
+
+/* Hero painting - no frame, 3D motion with darkened shadows */
+.painting-frame-hero-minimal {
+  border-radius: 1px;
+  box-shadow: 
+    0 8px 32px -8px rgba(0, 0, 0, 0.14),
+    0 16px 64px -12px rgba(0, 0, 0, 0.09),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.painting-frame-hero-minimal:hover {
+  transform: translateY(-4px);
+  box-shadow: 
+    0 12px 48px -8px rgba(0, 0, 0, 0.18),
+    0 24px 96px -12px rgba(0, 0, 0, 0.14),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.07);
+}
+
+/* Navigation buttons with enhanced 3D motion (20% more than hero painting) */
+.nav-button-3d {
+  display: inline-block;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.nav-button-3d:hover {
+  transform: translateY(-4.8px) scale(1.2);
+}
+
+/* Section fade-up reveal animation */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  animation: fade-up 0.6s ease-out 0.1s both;
+}
+
+/* Page transition animations */
+@keyframes page-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes page-fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Apply page transition on route change */
+body {
+  animation: page-fade-in 0.4s ease-out;
+}
+
+/* Artist portrait - editorial style with soft shadow */
+.portrait-editorial {
+  display: block;
+  width: 160px;
+  height: 200px;
+  overflow: hidden;
+  box-shadow: 
+    0 4px 12px -4px rgba(0, 0, 0, 0.1),
+    0 8px 24px -8px rgba(0, 0, 0, 0.06);
+  animation: fade-up 0.8s ease-out 0.2s both;
+}
+
+.portrait-editorial img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Responsive: remove float on mobile */
+@media (max-width: 768px) {
+  .portrait-editorial {
+    float: none;
+    margin: 0 auto 24px;
+    display: block;
+  }
+}
