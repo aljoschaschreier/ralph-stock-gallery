@@ -9,14 +9,8 @@ import { t } from "@/lib/translations"
 export function GallerySection() {
   const { language } = useLanguage()
 
-  // Show newest works first, then left-to-right in row order.
-  const previewArtworks = [...artworks]
-    .sort((a, b) => {
-      const yearDiff = Number(b.year) - Number(a.year)
-      if (yearDiff !== 0) return yearDiff
-      return Number(b.id) - Number(a.id)
-    })
-    .slice(0, 9)
+  // Show only first 9 paintings in the preview
+  const previewArtworks = artworks.slice(0, 9)
 
   return (
     <section id="gallery" className="px-0 py-0 bg-secondary/50 relative">
@@ -25,14 +19,14 @@ export function GallerySection() {
           {t("gallery.title", language)}
         </h2>
 
-        {/* Gallery preview */}
+        {/* Gallery — masonry grid layout with 2cm side margins and 1cm gaps */}
         <div className="px-[56px] relative overflow-hidden" style={{ maxHeight: "2400px" }}>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
+          <div className="columns-1 sm:columns-2 lg:columns-3 gap-7">
             {previewArtworks.map((artwork) => (
               <Link
                 key={artwork.id}
                 href={`/works/${artwork.slug}`}
-                className="group block"
+                className="group block mb-7 break-inside-avoid"
               >
                 <article className="cursor-pointer">
                   <div className="painting-frame-gallery overflow-hidden relative">
