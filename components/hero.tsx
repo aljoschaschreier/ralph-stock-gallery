@@ -132,9 +132,6 @@ export function Hero() {
         <p className="text-muted-foreground text-base md:text-lg tracking-widest uppercase mb-6">
           {t("hero.tagline", language)}
         </p>
-        <p className="text-foreground/70 text-lg md:text-xl max-w-md mx-auto mb-12 leading-relaxed">
-          {t("hero.description", language)}
-        </p>
         <Link
           href="/gallery"
           className="inline-block border border-foreground px-10 py-4 text-sm tracking-widest uppercase text-foreground transition-colors hover:bg-foreground hover:text-background"

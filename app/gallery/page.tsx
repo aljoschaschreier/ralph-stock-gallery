@@ -31,9 +31,6 @@ export default function GalleryPage() {
         <h1 className="font-serif text-3xl md:text-4xl text-foreground tracking-tight">
           {t("gallery.title", language)}
         </h1>
-        <p className="mt-3 text-muted-foreground text-base max-w-2xl">
-          {t("gallery.description", language)}
-        </p>
       </header>
 
       {/* Gallery — columns layout: 1cm gap between all paintings (vertical via margin, horizontal via column-gap) */}

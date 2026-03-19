@@ -10,10 +10,6 @@ export function About() {
   return (
     <section className="px-6 py-32 lg:py-48">
       <div className="mx-auto max-w-5xl">
-        <h1 className="font-serif text-3xl md:text-4xl text-foreground tracking-tight mb-10">
-          {t("about.title", language)}
-        </h1>
-
         {/* Portrait first on mobile; on desktop it sits to the right of the text */}
         <div className="md:flex md:items-start md:gap-10">
           <div className="mx-auto md:mx-0 md:ml-10 mt-0 md:mt-0 flex-shrink-0 md:order-2">
