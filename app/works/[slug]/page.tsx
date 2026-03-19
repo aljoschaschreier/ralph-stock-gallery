@@ -4,7 +4,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { notFound, useRouter } from "next/navigation"
 import { getArtworkBySlug, getPreviousArtwork, getNextArtwork, artworks } from "@/lib/artworks"
-import { ArrowLeft, ArrowRight, Maximize2 } from "lucide-react"
+import { ArrowLeft, ArrowRight, Maximize2, Minimize2 } from "lucide-react"
 import { useLanguage } from "@/providers/language-provider"
 import { t } from "@/lib/translations"
 import { ImageMagnifier } from "@/components/image-magnifier"
@@ -125,7 +125,7 @@ export default function ArtworkPage(props: { params: Promise<{ slug: string }> }
               href={`/works/${previousArtwork.slug}`}
               scroll={false}
               aria-label={t("artwork.nav.previous" as any, language)}
-              className="group absolute left-2 md:left-[-94px] top-0 h-full z-10 inline-flex items-start"
+              className="group absolute left-2 md:left-[-94px] top-0 h-full z-10 hidden md:inline-flex items-start"
             >
               <span className="sticky top-1/2 -translate-y-1/2 inline-flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-full border border-border/50 text-muted-foreground/70 hover:text-foreground group-hover:border-border transition-colors">
                 <ArrowLeft className="w-5 h-5 transition-transform group-hover:-translate-x-1" />
@@ -138,7 +138,7 @@ export default function ArtworkPage(props: { params: Promise<{ slug: string }> }
               href={`/works/${nextArtwork.slug}`}
               scroll={false}
               aria-label={t("artwork.nav.next" as any, language)}
-              className="group absolute right-2 md:right-[-94px] top-0 h-full z-10 inline-flex items-start"
+              className="group absolute right-2 md:right-[-94px] top-0 h-full z-10 hidden md:inline-flex items-start"
             >
               <span className="sticky top-1/2 -translate-y-1/2 inline-flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-full border border-border/50 text-muted-foreground/70 hover:text-foreground group-hover:border-border transition-colors">
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
@@ -172,10 +172,44 @@ export default function ArtworkPage(props: { params: Promise<{ slug: string }> }
           </ImageMagnifier>
         </div>
 
-        <div className="mt-8 text-center">
-          <span className="text-xs text-muted-foreground/40 tracking-wider">
-            {artworks.findIndex((a) => a.slug === slug) + 1} / {artworks.length}
-          </span>
+        <div className="mt-8">
+          <div className="flex md:hidden items-center justify-center gap-4">
+            {previousArtwork ? (
+              <Link
+                href={`/works/${previousArtwork.slug}`}
+                scroll={false}
+                aria-label={t("artwork.nav.previous" as any, language)}
+                className="inline-flex items-center justify-center w-9 h-9 rounded-full border border-border/50 text-muted-foreground/70 hover:text-foreground transition-colors"
+              >
+                <ArrowLeft className="w-4 h-4" />
+              </Link>
+            ) : (
+              <span className="inline-flex w-9 h-9" />
+            )}
+
+            <span className="text-xs text-muted-foreground/40 tracking-wider">
+              {artworks.findIndex((a) => a.slug === slug) + 1} / {artworks.length}
+            </span>
+
+            {nextArtwork ? (
+              <Link
+                href={`/works/${nextArtwork.slug}`}
+                scroll={false}
+                aria-label={t("artwork.nav.next" as any, language)}
+                className="inline-flex items-center justify-center w-9 h-9 rounded-full border border-border/50 text-muted-foreground/70 hover:text-foreground transition-colors"
+              >
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            ) : (
+              <span className="inline-flex w-9 h-9" />
+            )}
+          </div>
+
+          <div className="hidden md:block text-center">
+            <span className="text-xs text-muted-foreground/40 tracking-wider">
+              {artworks.findIndex((a) => a.slug === slug) + 1} / {artworks.length}
+            </span>
+          </div>
         </div>
 
         {/* Museum Label - Directly Below */}
@@ -200,6 +234,15 @@ export default function ArtworkPage(props: { params: Promise<{ slug: string }> }
             className="absolute inset-0"
             aria-label={t("artwork.fullscreen.close" as any, language)}
           />
+
+          <button
+            type="button"
+            onClick={() => void closeFullscreenViewer()}
+            aria-label={t("artwork.fullscreen.close" as any, language)}
+            className="absolute right-4 top-4 z-30 inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/40 bg-black/35 text-white/90 transition-colors hover:border-white/70 hover:bg-black/50"
+          >
+            <Minimize2 className="h-4 w-4" />
+          </button>
 
           <div className="relative z-10 flex h-full flex-col items-center justify-center pt-[10mm] pb-[10mm] px-4 md:px-10">
             <div className="relative flex min-h-0 w-full flex-1 items-center justify-center">
