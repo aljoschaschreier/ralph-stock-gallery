@@ -11,7 +11,11 @@ import { t } from "@/lib/translations"
 export default function GalleryPage() {
   const { language } = useLanguage()
   const router = useRouter()
-  const sortedArtworks = [...artworks].sort((a, b) => Number(b.year) - Number(a.year))
+  const sortedArtworks = [...artworks].sort((a, b) => {
+    const yearDiff = Number(b.year) - Number(a.year)
+    if (yearDiff !== 0) return yearDiff
+    return Number(b.id) - Number(a.id)
+  })
 
   return (
     <main className="min-h-screen bg-background">
@@ -33,14 +37,14 @@ export default function GalleryPage() {
         </h1>
       </header>
 
-      {/* Gallery — columns layout: 1cm gap between all paintings (vertical via margin, horizontal via column-gap) */}
+      {/* Gallery — newest first, left-to-right row flow */}
       <section className="py-0 px-[1cm] pb-[3cm]">
-        <div className="mt-10 columns-1 sm:columns-2 lg:columns-3 gap-[1cm] [column-fill:balance]">
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-[1cm] gap-y-[10mm]">
           {sortedArtworks.map((artwork) => (
             <Link
               key={artwork.id}
               href={`/works/${artwork.slug}`}
-              className="group block mb-[1cm] break-inside-avoid"
+              className="group block"
             >
                 <article className="cursor-pointer">
                   <div className="painting-frame-gallery overflow-hidden relative">
