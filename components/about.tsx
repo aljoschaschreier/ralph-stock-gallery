@@ -14,26 +14,9 @@ export function About() {
           {t("about.title", language)}
         </h1>
 
-        {/* Text with portrait to the right */}
+        {/* Portrait first on mobile; on desktop it sits to the right of the text */}
         <div className="md:flex md:items-start md:gap-10">
-          <div className="space-y-6 text-foreground/80 leading-relaxed text-base md:text-lg flex-1">
-            <p>{t("about.p1", language)}</p>
-            <p>{t("about.p2", language)}</p>
-            <p>{t("about.p3", language)}</p>
-            <p>{t("about.p4", language)}</p>
-            <p>{t("about.p5", language)}</p>
-
-            <blockquote className="pt-6 space-y-2">
-              <p className="font-serif text-xl md:text-2xl lg:text-3xl leading-relaxed text-foreground text-balance">
-                "To make people free is the aim of art, therefore art for me is the science of freedom."
-              </p>
-              <footer className="text-muted-foreground text-lg pt-1">
-                — Joseph Beuys
-              </footer>
-            </blockquote>
-          </div>
-
-          <div className="mx-auto md:mx-0 md:ml-10 mt-8 md:mt-0 flex-shrink-0">
+          <div className="mx-auto md:mx-0 md:ml-10 mt-0 md:mt-0 flex-shrink-0 md:order-2">
             <div className="w-40 md:w-52 lg:w-60 overflow-hidden bg-muted rounded">
               <Image
                 src="/artist-portrait.png"
@@ -44,6 +27,23 @@ export function About() {
                 priority
               />
             </div>
+          </div>
+
+          <div className="space-y-6 text-foreground/80 leading-relaxed text-base md:text-lg flex-1 mt-8 md:mt-0 md:order-1">
+            <p>{t("about.p1", language)}</p>
+            <p>{t("about.p2", language)}</p>
+            <p>{t("about.p3", language)}</p>
+            <p>{t("about.p4", language)}</p>
+            <p>{t("about.p5", language)}</p>
+
+            <blockquote className="pt-6 space-y-2">
+              <p className="font-serif text-xl md:text-2xl lg:text-3xl leading-relaxed text-foreground text-balance">
+                {t("about.quote", language)}
+              </p>
+              <footer className="text-muted-foreground text-lg pt-1">
+                — Joseph Beuys
+              </footer>
+            </blockquote>
           </div>
         </div>
       </div>

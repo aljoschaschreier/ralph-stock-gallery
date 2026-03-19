@@ -10,8 +10,8 @@ export function LanguageSwitcher() {
   const [isOpen, setIsOpen] = useState(false)
 
   const languages: { code: Language; label: string }[] = [
-    { code: "en", label: "English" },
     { code: "de", label: "Deutsch" },
+    { code: "en", label: "English" },
     { code: "fr", label: "Français" },
     { code: "it", label: "Italiano" },
     { code: "es", label: "Español" },

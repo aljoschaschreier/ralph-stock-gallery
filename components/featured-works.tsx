@@ -7,12 +7,12 @@ import { t } from "@/lib/translations"
 
 const selectedWorks = [
   {
-    slug: "autunno-delle-forme-2021",
-    title: "Autunno Delle Forme",
+    slug: "il-risveglio-delle-forme-2021",
+    title: "Il Risveglio Delle Forme",
     year: "2021",
     medium: "Oil on Canvas",
     dimensions: "89 x 114 cm",
-    image: "https://static.wixstatic.com/media/05a4d7_df524ab43c594446b43031661b82b7d3~mv2.jpg/v1/fit/w_920,h_1164,q_90,enc_avif,quality_auto/05a4d7_df524ab43c594446b43031661b82b7d3~mv2.jpg",
+    image: "https://static.wixstatic.com/media/05a4d7_b367b6e831624b2fab5cdd2958c874bb~mv2.jpg/v1/fit/w_920,h_1164,q_90,enc_avif,quality_auto/05a4d7_b367b6e831624b2fab5cdd2958c874bb~mv2.jpg",
     aspectRatio: "89/114",
   },
   {
@@ -25,12 +25,12 @@ const selectedWorks = [
     aspectRatio: "89/114",
   },
   {
-    slug: "il-risveglio-delle-forme-2021",
-    title: "Il Risveglio Delle Forme",
+    slug: "autunno-delle-forme-2021",
+    title: "Autunno Delle Forme",
     year: "2021",
     medium: "Oil on Canvas",
     dimensions: "89 x 114 cm",
-    image: "https://static.wixstatic.com/media/05a4d7_b367b6e831624b2fab5cdd2958c874bb~mv2.jpg/v1/fit/w_920,h_1164,q_90,enc_avif,quality_auto/05a4d7_b367b6e831624b2fab5cdd2958c874bb~mv2.jpg",
+    image: "https://static.wixstatic.com/media/05a4d7_df524ab43c594446b43031661b82b7d3~mv2.jpg/v1/fit/w_920,h_1164,q_90,enc_avif,quality_auto/05a4d7_df524ab43c594446b43031661b82b7d3~mv2.jpg",
     aspectRatio: "89/114",
   },
 ]
@@ -44,6 +44,14 @@ export function FeaturedWorks() {
         <h2 className="font-serif text-3xl md:text-4xl text-foreground text-center mb-24 lg:mb-32 tracking-tight">
           {t("works.title", language)}
         </h2>
+        <div className="mx-auto -mt-16 mb-14 max-w-3xl text-center space-y-3">
+          <p className="text-sm md:text-base leading-relaxed text-foreground/70">
+          {t("works.series-intro", language)}
+          </p>
+          <p className="text-xs md:text-sm leading-relaxed text-muted-foreground/90 italic">
+            Il Risveglio Delle Forme - {t("series.il-risveglio.title-translation" as any, language)} · Primavera Delle Forme - {t("series.primavera.title-translation" as any, language)} · Autunno Delle Forme - {t("series.autunno.title-translation" as any, language)}
+          </p>
+        </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 w-full">
           {selectedWorks.map((painting, index) => (

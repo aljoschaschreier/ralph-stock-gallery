@@ -2,27 +2,32 @@ export const translations = {
   en: {
     // Header & Navigation
     "nav.works": "Works",
-    "nav.about": "About",
+    "nav.about": "About me",
     "nav.exhibitions": "Exhibitions",
     "nav.contact": "Contact",
     "header.ralph": "Ralph Stock",
-    "header.subtitle": "Contemporary Paintings",
+    "header.subtitle": "Painting",
 
     // Hero Section
-    "hero.tagline": "Contemporary Paintings",
+    "hero.tagline": "Painting",
     "hero.description": "Paintings shaped by color, atmosphere, and reflection.",
-    "hero.cta": "Enter Gallery",
+    "hero.cta": "View Works",
 
     // About Section
-    "about.title": "About",
+    "about.title": "About me",
     "about.p1": "Welcome. I am a painter based in Karlsruhe, the city where I was born and where I continue to live and work. Painting has accompanied me for many years and remains my way of exploring the quiet dialogue between color, structure, and atmosphere.",
     "about.p2": "After studying literature and history in Karlsruhe from 1987 to 1994, my focus gradually shifted toward visual expression. Painting became the place where reflection, intuition, and observation come together.",
-    "about.p3": "When you look at these works, I hope you experience them slowly. My paintings are not meant to explain themselves immediately. They are invitations to pause, to look more closely, and to discover something personal within the image.",
+    "about.p3": "When you look at these works, I hope you experience them slowly. My works are not meant to explain themselves immediately. They are invitations to pause, to look more closely, and to discover something personal within the image.",
     "about.p4": "I am a member of the Professional Association of Visual Artists Karlsruhe (BBK). My work has been exhibited in galleries and exhibitions including Kunstforum Forst, Künstlerbund Speyer, and Schloss Oberschwappach.",
-    "about.p5": "Some of my paintings are part of public collections in Karlsruhe, and in 2016 I received the Stollwork Prize for Painting.",
+    "about.p5": "Some of my works are part of public collections in Karlsruhe, and in 2016 I received the Stollwork Prize for Painting.",
+    "about.quote": "\"To make people free is the aim of art, therefore art for me is the science of freedom.\"",
 
     // Featured Works
-    "works.title": "Selected Works",
+    "works.title": "Small Series",
+    "works.series-intro": "This small series stays close to quiet transitions in light and season. The three paintings move from awakening to bloom to release—less as a narrative than as a gentle rhythm of becoming.",
+    "series.il-risveglio.title-translation": "The Awakening of Forms",
+    "series.primavera.title-translation": "Spring of Forms",
+    "series.autunno.title-translation": "Autumn of Forms",
 
     // Exhibitions
     "exhibitions.title": "Exhibitions",
@@ -30,8 +35,10 @@ export const translations = {
     // Contact
     "contact.title": "Contact",
     "contact.description": "For inquiries about exhibitions, acquisitions, or commissions, please get in touch.",
+    "contact.note": "I look forward to hearing from you!",
     "contact.name": "Name",
     "contact.email": "Email",
+    "contact.email-placeholder": "your@email.com",
     "contact.message": "Message",
     "contact.send": "Send",
     "contact.sent": "Message sent successfully!",
@@ -44,14 +51,16 @@ export const translations = {
     // Artist Statement
     "artist.title": "Artist Statement",
     "artist.p1": "Painting for me is a form of thinking through images. I work through color, rhythm, and composition in search of visual spaces that carry atmosphere and presence.",
-    "artist.p2": "Each painting develops gradually through layers of change. Surfaces are built, altered, and rediscovered until the image reaches a quiet balance.",
+    "artist.p2": "Surfaces and layers are built, altered, and rediscovered until the image reaches a quiet balance.",
     "artist.p3": "Rather than describing specific subjects, my work explores perception, memory, and the subtle relationship between structure and emotion.",
-    "artist.p4": "I hope these paintings create moments of stillness where viewers can slow down and form their own connection with the work.",
+    "artist.p4": "I hope my works create moments of stillness where viewers can slow down and form their own connection with the work.",
+    "artist.about-cta": "About me",
 
     // Gallery
-    "gallery.title": "Gallery Archive",
+    "gallery.title": "Selected Works",
     "gallery.back": "Back",
-    "gallery.description": "A comprehensive collection of paintings and works exploring color, atmosphere, and the dialogue between structure and emotion.",
+    "gallery.description": "A comprehensive collection of works exploring color, atmosphere, and the dialogue between structure and emotion.",
+    "gallery.view-full": "View All Works",
 
     // CV
     "cv.button": "Curriculum Vitae",
@@ -69,6 +78,12 @@ export const translations = {
     // Mediums
     "medium.oil-on-canvas": "Oil on canvas",
     "medium.oil-on-hardboard": "Oil on hardboard",
+    "artwork.nav.previous": "Previous artwork",
+    "artwork.nav.next": "Next artwork",
+    "artwork.fullscreen.open": "Open fullscreen",
+    "artwork.fullscreen.close": "Close fullscreen",
+    "artwork.image.previous": "Previous image",
+    "artwork.image.next": "Next image",
 
     // Artwork descriptions
     "artwork.blossom-bleach-2019.description": "Floral beauty stripped of color and vitality. The painting explores the paradox of bleached blossoms—delicate forms drained of their vibrancy, finding unexpected grace in absence and the erosion of chromatic intensity. 30 × 40 cm",
@@ -119,27 +134,32 @@ export const translations = {
   de: {
     // Header & Navigation
     "nav.works": "Werke",
-    "nav.about": "Über",
+    "nav.about": "Über mich",
     "nav.exhibitions": "Ausstellungen",
     "nav.contact": "Kontakt",
     "header.ralph": "Ralph Stock",
-    "header.subtitle": "Zeitgenössische Gemälde",
+    "header.subtitle": "Malerei",
 
     // Hero Section
-    "hero.tagline": "Zeitgenössische Gemälde",
-    "hero.description": "Gemälde geprägt von Farbe, Atmosphäre und Reflexion.",
-    "hero.cta": "Galerie Betreten",
+    "hero.tagline": "Malerei",
+    "hero.description": "Werke geprägt von Farbe, Atmosphäre und Reflexion.",
+    "hero.cta": "Arbeiten ansehen",
 
     // About Section
-    "about.title": "Über",
+    "about.title": "Über mich",
     "about.p1": "Willkommen. Ich bin ein in Karlsruhe ansässiger Maler, der Stadt, in der ich geboren wurde und in der ich weiterhin lebe und arbeite. Die Malerei begleitet mich seit vielen Jahren und bleibt meine Art, den stillen Dialog zwischen Farbe, Struktur und Atmosphäre zu erforschen.",
     "about.p2": "Nach dem Studium von Literatur und Geschichte in Karlsruhe von 1987 bis 1994 verlagerte sich mein Fokus allmählich auf den visuellen Ausdruck. Die Malerei wurde zum Ort, an dem Reflexion, Intuition und Beobachtung zusammenkommen.",
-    "about.p3": "Wenn Sie sich diese Werke ansehen, hoffe ich, dass Sie sie langsam erleben. Meine Gemälde sollen sich nicht sofort selbst erklären. Sie sind Einladungen, innezuhalten, genauer hinzuschauen und etwas Persönliches im Bild zu entdecken.",
+    "about.p3": "Wenn Sie sich diese Werke ansehen, hoffe ich, dass Sie sie langsam erleben. Meine Werke sollen sich nicht sofort selbst erklären. Sie sind Einladungen, innezuhalten, genauer hinzuschauen und etwas Persönliches im Bild zu entdecken.",
     "about.p4": "Ich bin Mitglied der Berufsvereinigung Bildender Künstler Karlsruhe (BBK). Meine Arbeiten wurden in Galerien und Ausstellungen gezeigt, darunter Kunstforum Forst, Künstlerbund Speyer und Schloss Oberschwappach.",
-    "about.p5": "Einige meiner Gemälde sind Teil öffentlicher Sammlungen in Karlsruhe, und 2016 erhielt ich den Stollwork-Preis für Malerei.",
+    "about.p5": "Einige meiner Werke sind Teil öffentlicher Sammlungen in Karlsruhe, und 2016 erhielt ich den Stollwork-Preis für Malerei.",
+    "about.quote": "\"To make people free is the aim of art, therefore art for me is the science of freedom.\"",
 
     // Featured Works
-    "works.title": "Ausgewählte Werke",
+    "works.title": "Kleine Serie",
+    "works.series-intro": "Diese kleine Serie bleibt nah an stillen Übergängen von Licht und Jahreszeit. Die drei Bilder bewegen sich vom Erwachen über das Aufblühen zum Loslassen - weniger als Erzählung, eher als leiser Rhythmus des Werdens.",
+    "series.il-risveglio.title-translation": "Das Erwachen der Formen",
+    "series.primavera.title-translation": "Frühling der Formen",
+    "series.autunno.title-translation": "Herbst der Formen",
 
     // Exhibitions
     "exhibitions.title": "Ausstellungen",
@@ -147,8 +167,10 @@ export const translations = {
     // Contact
     "contact.title": "Kontakt",
     "contact.description": "Für Anfragen zu Ausstellungen, Ankäufen oder Provisionen kontaktieren Sie mich bitte.",
+    "contact.note": "Ich freue mich von Ihnen zu hören!",
     "contact.name": "Name",
     "contact.email": "E-Mail",
+    "contact.email-placeholder": "deine@email.de",
     "contact.message": "Nachricht",
     "contact.send": "Senden",
     "contact.sent": "Nachricht erfolgreich versendet!",
@@ -159,21 +181,23 @@ export const translations = {
     "footer.design": "Design & Entwicklung",
 
     // Artist Statement
-    "artist.title": "Künstleraussage",
+    "artist.title": "Zu meinen Arbeiten",
     "artist.p1": "Malen ist für mich eine Form des Denkens durch Bilder. Ich arbeite mit Farbe, Rhythmus und Komposition, um auf der Suche nach visuellen Räumen, die Atmosphäre und Präsenz tragen, zu experimentieren.",
-    "artist.p2": "Jedes Gemälde entwickelt sich allmählich durch Schichten von Veränderungen. Oberflächen werden aufgebaut, verändert und wiederentdeckt, bis das Bild ein stilles Gleichgewicht erreicht.",
+    "artist.p2": "Oberflächen und Schichten werden aufgebaut, verändert und wiederentdeckt, bis das Bild ein stilles Gleichgewicht erreicht.",
     "artist.p3": "Anstatt bestimmte Inhalte zu beschreiben, erforscht meine Arbeit Wahrnehmung, Erinnerung und die subtile Beziehung zwischen Struktur und Emotion.",
-    "artist.p4": "Ich hoffe, dass diese Gemälde Momente der Stille schaffen, in denen die Betrachter verweilen und ihre eigene Verbindung zum Werk aufbauen können.",
+    "artist.p4": "Ich hoffe, dass meine Arbeiten Momente der Stille schaffen, in denen die Betrachter verweilen und ihre eigene Verbindung zum Werk aufbauen können.",
+    "artist.about-cta": "Über mich",
 
     // Gallery
-    "gallery.title": "Galeriebestand",
+    "gallery.title": "Ausgewählte Arbeiten",
     "gallery.back": "Zurück",
-    "gallery.description": "Eine umfassende Sammlung von Gemälden und Werken, die Farbe, Atmosphäre und den Dialog zwischen Struktur und Emotion erkunden.",
+    "gallery.description": "Eine umfassende Sammlung von Arbeiten und Werken, die Farbe, Atmosphäre und den Dialog zwischen Struktur und Emotion erkunden.",
+    "gallery.view-full": "Alle Arbeiten ansehen",
 
     // CV
-    "cv.button": "Lebenslauf",
-    "cv.title": "Lebenslauf",
-    "cv.download": "Lebenslauf herunterladen",
+    "cv.button": "Curriculum Vitae",
+    "cv.title": "Curriculum Vitae",
+    "cv.download": "CV herunterladen",
     "cv.back": "Zurück",
     "cv.born": "Geboren in Karlsruhe, Deutschland",
     "cv.member": "Mitglied der Berufsvereinigung Bildender Künstler Karlsruhe",
@@ -186,6 +210,12 @@ export const translations = {
     // Mediums
     "medium.oil-on-canvas": "Öl auf Leinwand",
     "medium.oil-on-hardboard": "Öl auf Hartfaserplatte",
+    "artwork.nav.previous": "Vorheriges Kunstwerk",
+    "artwork.nav.next": "Nächstes Kunstwerk",
+    "artwork.fullscreen.open": "Vollbild öffnen",
+    "artwork.fullscreen.close": "Vollbild schließen",
+    "artwork.image.previous": "Vorheriges Bild",
+    "artwork.image.next": "Nächstes Bild",
 
     // Artwork descriptions
     "artwork.blossom-bleach-2019.description": "Florale Schönheit, der Farbe und Lebenskraft entzogen. Das Gemälde erkundet das Paradox gebleichter Blüten – zarte Formen, ihrer Leuchtkraft beraubt, die in der Abwesenheit eine unerwartete Anmut finden und den Verlust chromatischer Intensität sichtbar machen. 30 × 40 cm",
@@ -236,27 +266,32 @@ export const translations = {
   fr: {
     // Header & Navigation
     "nav.works": "Œuvres",
-    "nav.about": "À propos",
+    "nav.about": "À propos de moi",
     "nav.exhibitions": "Expositions",
     "nav.contact": "Contact",
     "header.ralph": "Ralph Stock",
-    "header.subtitle": "Peintures Contemporaines",
+    "header.subtitle": "Peinture",
 
     // Hero Section
-    "hero.tagline": "Peintures Contemporaines",
+    "hero.tagline": "Peinture",
     "hero.description": "Peintures façonnées par la couleur, l'atmosphère et la réflexion.",
-    "hero.cta": "Entrer dans la Galerie",
+    "hero.cta": "Voir les œuvres",
 
     // About Section
-    "about.title": "À propos",
+    "about.title": "À propos de moi",
     "about.p1": "Bienvenue. Je suis un peintre basé à Karlsruhe, la ville où je suis né et où je vis et travaille toujours. La peinture m'a accompagné pendant de nombreuses années et reste ma façon d'explorer le dialogue silencieux entre la couleur, la structure et l'atmosphère.",
     "about.p2": "Après avoir étudié la littérature et l'histoire à Karlsruhe de 1987 à 1994, mon intérêt s'est progressivement tourné vers l'expression visuelle. La peinture est devenue le lieu où la réflexion, l'intuition et l'observation se rencontrent.",
-    "about.p3": "Lorsque vous regardez ces œuvres, j'espère que vous les vivrez lentement. Mes peintures ne sont pas censées s'expliquer immédiatement. Ce sont des invitations à faire une pause, à regarder de plus près et à découvrir quelque chose de personnel dans l'image.",
+    "about.p3": "Lorsque vous regardez ces œuvres, j'espère que vous les vivrez lentement. Mes œuvres ne sont pas censées s'expliquer immédiatement. Ce sont des invitations à faire une pause, à regarder de plus près et à découvrir quelque chose de personnel dans l'image.",
     "about.p4": "Je suis membre de l'Association Professionnelle des Artistes Visuels Karlsruhe (BBK). Mon travail a été exposé dans des galeries et des expositions, notamment au Kunstforum Forst, au Künstlerbund Speyer et au Schloss Oberschwappach.",
-    "about.p5": "Certains de mes tableaux font partie de collections publiques à Karlsruhe, et en 2016, j'ai reçu le Prix Stollwork pour la Peinture.",
+    "about.p5": "Certaines de mes œuvres font partie de collections publiques à Karlsruhe, et en 2016, j'ai reçu le Prix Stollwork pour la Peinture.",
+    "about.quote": "\"To make people free is the aim of art, therefore art for me is the science of freedom.\"",
 
     // Featured Works
-    "works.title": "Œuvres Choisies",
+    "works.title": "Petite série",
+    "works.series-intro": "Cette petite série suit des transitions silencieuses de lumière et de saison. Les trois peintures vont de l'éveil à l'épanouissement puis au relâchement—moins comme un récit que comme un rythme discret du devenir.",
+    "series.il-risveglio.title-translation": "L'éveil des formes",
+    "series.primavera.title-translation": "Printemps des formes",
+    "series.autunno.title-translation": "Automne des formes",
 
     // Exhibitions
     "exhibitions.title": "Expositions",
@@ -264,8 +299,10 @@ export const translations = {
     // Contact
     "contact.title": "Contact",
     "contact.description": "Pour toute demande concernant les expositions, les acquisitions ou les commandes, veuillez me contacter.",
+    "contact.note": "Je me réjouis de vous lire !",
     "contact.name": "Nom",
     "contact.email": "E-mail",
+    "contact.email-placeholder": "votre@email.fr",
     "contact.message": "Message",
     "contact.send": "Envoyer",
     "contact.sent": "Message envoyé avec succès !",
@@ -278,14 +315,16 @@ export const translations = {
     // Artist Statement
     "artist.title": "Déclaration de l'Artiste",
     "artist.p1": "Pour moi, la peinture est une forme de réflexion à travers les images. Je travaille la couleur, le rythme et la composition en quête d'espaces visuels qui portent atmosphère et présence.",
-    "artist.p2": "Chaque peinture se développe graduellement à travers des couches de changements. Les surfaces sont construites, modifiées et redécouvertes jusqu'à ce que l'image atteigne un équilibre silencieux.",
+    "artist.p2": "Surfaces et couches se construisent, se transforment et se redécouvrent, jusqu'à ce que l'image atteigne un équilibre silencieux.",
     "artist.p3": "Plutôt que de décrire des sujets spécifiques, mon travail explore la perception, la mémoire et la relation subtile entre la structure et l'émotion.",
-    "artist.p4": "J'espère que ces peintures créent des moments de quiétude où les spectateurs peuvent ralentir et former leur propre connexion avec l'œuvre.",
+    "artist.p4": "J'espère que mes œuvres créent des moments de quiétude où les spectateurs peuvent ralentir et former leur propre connexion avec l'œuvre.",
+    "artist.about-cta": "À propos de moi",
 
     // Gallery
-    "gallery.title": "Archive de la Galerie",
+    "gallery.title": "Œuvres sélectionnées",
     "gallery.back": "Retour",
-    "gallery.description": "Une collection complète de peintures et d'œuvres explorant la couleur, l'atmosphère et le dialogue entre la structure et l'émotion.",
+    "gallery.description": "Une collection complète d'œuvres explorant la couleur, l'atmosphère et le dialogue entre la structure et l'émotion.",
+    "gallery.view-full": "Voir toutes les œuvres",
 
     // CV
     "cv.button": "Curriculum Vitae",
@@ -303,6 +342,12 @@ export const translations = {
     // Mediums
     "medium.oil-on-canvas": "Huile sur toile",
     "medium.oil-on-hardboard": "Huile sur panneau",
+    "artwork.nav.previous": "Œuvre précédente",
+    "artwork.nav.next": "Œuvre suivante",
+    "artwork.fullscreen.open": "Ouvrir en plein écran",
+    "artwork.fullscreen.close": "Fermer le plein écran",
+    "artwork.image.previous": "Image précédente",
+    "artwork.image.next": "Image suivante",
 
     // Artwork descriptions
     "artwork.blossom-bleach-2019.description": "Beauté florale dépouillée de couleur et de vitalité. Le tableau explore le paradoxe des fleurs blanchies — formes délicates vidées de leur éclat, trouvant une grâce inattendue dans l'absence et l'érosion de l'intensité chromatique. 30 × 40 cm",
@@ -353,27 +398,32 @@ export const translations = {
   it: {
     // Header & Navigation
     "nav.works": "Opere",
-    "nav.about": "Chi sono",
+    "nav.about": "Su di me",
     "nav.exhibitions": "Mostre",
     "nav.contact": "Contatti",
     "header.ralph": "Ralph Stock",
-    "header.subtitle": "Pittura Contemporanea",
+    "header.subtitle": "Pittura",
 
     // Hero Section
-    "hero.tagline": "Pittura Contemporanea",
+    "hero.tagline": "Pittura",
     "hero.description": "Dipinti plasmati da colore, atmosfera e riflessione.",
-    "hero.cta": "Entra in Galleria",
+    "hero.cta": "Vedi le opere",
 
     // About Section
-    "about.title": "Chi sono",
+    "about.title": "Su di me",
     "about.p1": "Benvenuto. Sono un pittore con base a Karlsruhe, la città dove sono nato e dove continuo a vivere e lavorare. La pittura mi ha accompagnato per molti anni e rimane il mio modo di esplorare il dialogo silenzioso tra colore, struttura e atmosfera.",
     "about.p2": "Dopo aver studiato letteratura e storia a Karlsruhe dal 1987 al 1994, il mio focus si è gradualmente spostato verso l'espressione visiva. La pittura è diventata il luogo dove convergono riflessione, intuizione e osservazione.",
-    "about.p3": "Quando guardi questi lavori, spero che li viva lentamente. I miei dipinti non sono destinati a spiegarsi immediatamente. Sono inviti a fermarsi, a guardare più attentamente e a scoprire qualcosa di personale nell'immagine.",
+    "about.p3": "Quando guardi questi lavori, spero che li viva lentamente. Le mie opere non sono destinate a spiegarsi immediatamente. Sono inviti a fermarsi, a guardare più attentamente e a scoprire qualcosa di personale nell'immagine.",
     "about.p4": "Sono membro dell'Associazione Professionale degli Artisti Visivi Karlsruhe (BBK). Le mie opere sono state esposte in gallerie e mostre tra cui Kunstforum Forst, Künstlerbund Speyer e Schloss Oberschwappach.",
-    "about.p5": "Alcuni dei miei dipinti fanno parte di collezioni pubbliche a Karlsruhe, e nel 2016 ho ricevuto il Premio Stollwork per la Pittura.",
+    "about.p5": "Alcune delle mie opere fanno parte di collezioni pubbliche a Karlsruhe, e nel 2016 ho ricevuto il Premio Stollwork per la Pittura.",
+    "about.quote": "\"To make people free is the aim of art, therefore art for me is the science of freedom.\"",
 
     // Featured Works
-    "works.title": "Opere Scelte",
+    "works.title": "Piccola serie",
+    "works.series-intro": "Questa piccola serie segue passaggi silenziosi di luce e stagione. I tre dipinti si muovono dal risveglio alla fioritura fino al lasciare andare—meno come racconto, più come un ritmo lieve del divenire.",
+    "series.il-risveglio.title-translation": "Il risveglio delle forme",
+    "series.primavera.title-translation": "Primavera delle forme",
+    "series.autunno.title-translation": "Autunno delle forme",
 
     // Exhibitions
     "exhibitions.title": "Mostre",
@@ -381,8 +431,10 @@ export const translations = {
     // Contact
     "contact.title": "Contatti",
     "contact.description": "Per domande su mostre, acquisizioni o commissioni, non esitare a contattarmi.",
+    "contact.note": "Sarò felice di ricevere un vostro messaggio!",
     "contact.name": "Nome",
     "contact.email": "Email",
+    "contact.email-placeholder": "tuo@email.it",
     "contact.message": "Messaggio",
     "contact.send": "Invia",
     "contact.sent": "Messaggio inviato con successo!",
@@ -395,14 +447,16 @@ export const translations = {
     // Artist Statement
     "artist.title": "Dichiarazione dell'Artista",
     "artist.p1": "Per me la pittura è una forma di pensiero attraverso le immagini. Lavoro con il colore, il ritmo e la composizione in cerca di spazi visivi che portino atmosfera e presenza.",
-    "artist.p2": "Ogni dipinto si sviluppa gradualmente attraverso strati di cambiamento. Le superfici vengono costruite, alterate e riscoperte finché l'immagine raggiunge un equilibrio tranquillo.",
+    "artist.p2": "Superfici e strati vengono costruiti, trasformati e riscoperti finché l'immagine raggiunge un equilibrio silenzioso.",
     "artist.p3": "Piuttosto che descrivere soggetti specifici, il mio lavoro esplora la percezione, la memoria e la sottile relazione tra struttura ed emozione.",
-    "artist.p4": "Spero che questi dipinti creino momenti di quiete dove i visitatori possono rallentare e formare la propria connessione con l'opera.",
+    "artist.p4": "Spero che le mie opere creino momenti di quiete dove i visitatori possono rallentare e formare la propria connessione con l'opera.",
+    "artist.about-cta": "Su di me",
 
     // Gallery
-    "gallery.title": "Archivio Galleria",
+    "gallery.title": "Opere selezionate",
     "gallery.back": "Indietro",
-    "gallery.description": "Una collezione completa di dipinti e opere che esplorano il colore, l'atmosfera e il dialogo tra struttura ed emozione.",
+    "gallery.description": "Una raccolta completa di opere che esplorano il colore, l'atmosfera e il dialogo tra struttura ed emozione.",
+    "gallery.view-full": "Vedi tutte le opere",
 
     // CV
     "cv.button": "Curriculum Vitae",
@@ -420,6 +474,12 @@ export const translations = {
     // Mediums
     "medium.oil-on-canvas": "Olio su tela",
     "medium.oil-on-hardboard": "Olio su tavola",
+    "artwork.nav.previous": "Opera precedente",
+    "artwork.nav.next": "Opera successiva",
+    "artwork.fullscreen.open": "Apri a schermo intero",
+    "artwork.fullscreen.close": "Chiudi schermo intero",
+    "artwork.image.previous": "Immagine precedente",
+    "artwork.image.next": "Immagine successiva",
 
     // Artwork descriptions
     "artwork.blossom-bleach-2019.description": "Bellezza floreale privata di colore e vitalità. Il dipinto esplora il paradosso dei fiori sbiancati — forme delicate svuotate del loro splendore, che trovano una grazia inattesa nell'assenza e nell'erosione dell'intensità cromatica. 30 × 40 cm",
@@ -470,27 +530,32 @@ export const translations = {
   es: {
     // Header & Navigation
     "nav.works": "Obras",
-    "nav.about": "Acerca de",
+    "nav.about": "Sobre mí",
     "nav.exhibitions": "Exposiciones",
     "nav.contact": "Contacto",
     "header.ralph": "Ralph Stock",
-    "header.subtitle": "Pintura Contemporánea",
+    "header.subtitle": "Pintura",
 
     // Hero Section
-    "hero.tagline": "Pintura Contemporánea",
+    "hero.tagline": "Pintura",
     "hero.description": "Pinturas formadas por color, atmósfera y reflexión.",
-    "hero.cta": "Entrar a la Galería",
+    "hero.cta": "Ver obras",
 
     // About Section
-    "about.title": "Acerca de",
+    "about.title": "Sobre mí",
     "about.p1": "Bienvenido. Soy un pintor con base en Karlsruhe, la ciudad donde nací y donde sigo viviendo y trabajando. La pintura me ha acompañado durante muchos años y sigue siendo mi forma de explorar el diálogo silencioso entre color, estructura y atmósfera.",
     "about.p2": "Después de estudiar literatura e historia en Karlsruhe de 1987 a 1994, mi enfoque se desplazó gradualmente hacia la expresión visual. La pintura se convirtió en el lugar donde convergen la reflexión, la intuición y la observación.",
-    "about.p3": "Cuando ves estas obras, espero que las experimentes lentamente. Mis pinturas no pretenden explicarse inmediatamente. Son invitaciones a pausar, a mirar más de cerca y a descubrir algo personal en la imagen.",
+    "about.p3": "Cuando ves estas obras, espero que las experimentes lentamente. Mis obras no pretenden explicarse inmediatamente. Son invitaciones a pausar, a mirar más de cerca y a descubrir algo personal en la imagen.",
     "about.p4": "Soy miembro de la Asociación Profesional de Artistas Visuales Karlsruhe (BBK). Mi trabajo ha sido expuesto en galerías y exposiciones incluyendo Kunstforum Forst, Künstlerbund Speyer y Schloss Oberschwappach.",
-    "about.p5": "Algunos de mis cuadros forman parte de colecciones públicas en Karlsruhe, y en 2016 recibí el Premio Stollwork para la Pintura.",
+    "about.p5": "Algunas de mis obras forman parte de colecciones públicas en Karlsruhe, y en 2016 recibí el Premio Stollwork para la Pintura.",
+    "about.quote": "\"To make people free is the aim of art, therefore art for me is the science of freedom.\"",
 
     // Featured Works
-    "works.title": "Obras Seleccionadas",
+    "works.title": "Serie pequeña",
+    "works.series-intro": "Esta pequeña serie acompaña transiciones silenciosas de luz y estación. Las tres pinturas pasan del despertar al florecimiento y al desprendimiento—menos como relato y más como un ritmo suave del devenir.",
+    "series.il-risveglio.title-translation": "El despertar de las formas",
+    "series.primavera.title-translation": "Primavera de las formas",
+    "series.autunno.title-translation": "Otoño de las formas",
 
     // Exhibitions
     "exhibitions.title": "Exposiciones",
@@ -498,8 +563,10 @@ export const translations = {
     // Contact
     "contact.title": "Contacto",
     "contact.description": "Para consultas sobre exposiciones, adquisiciones o comisiones, póngase en contacto conmigo.",
+    "contact.note": "¡Me alegrará saber de usted!",
     "contact.name": "Nombre",
     "contact.email": "Correo Electrónico",
+    "contact.email-placeholder": "tu@email.es",
     "contact.message": "Mensaje",
     "contact.send": "Enviar",
     "contact.sent": "¡Mensaje enviado con éxito!",
@@ -512,14 +579,16 @@ export const translations = {
     // Artist Statement
     "artist.title": "Declaración del Artista",
     "artist.p1": "Para mí, la pintura es una forma de pensar a través de imágenes. Trabajo con color, ritmo y composición en busca de espacios visuales que transmitan atmósfera y presencia.",
-    "artist.p2": "Cada pintura se desarrolla gradualmente a través de capas de cambio. Las superficies se construyen, se alteran y se redescubren hasta que la imagen alcanza un equilibrio tranquilo.",
+    "artist.p2": "Las superficies y las capas se construyen, se transforman y se redescubren hasta que la imagen alcanza un equilibrio sereno.",
     "artist.p3": "En lugar de describir sujetos específicos, mi trabajo explora la percepción, la memoria y la relación sutil entre la estructura y la emoción.",
-    "artist.p4": "Espero que estas pinturas creen momentos de quietud donde los espectadores puedan ralentizarse y formar su propia conexión con la obra.",
+    "artist.p4": "Espero que mis obras creen momentos de quietud donde los espectadores puedan ralentizarse y formar su propia conexión con la obra.",
+    "artist.about-cta": "Sobre mí",
 
     // Gallery
-    "gallery.title": "Archivo de Galería",
+    "gallery.title": "Obras seleccionadas",
     "gallery.back": "Atrás",
-    "gallery.description": "Una colección completa de pinturas y obras que exploran el color, la atmósfera y el diálogo entre estructura y emoción.",
+    "gallery.description": "Una colección completa de obras que exploran el color, la atmósfera y el diálogo entre estructura y emoción.",
+    "gallery.view-full": "Ver todas las obras",
 
     // CV
     "cv.button": "Curriculum Vitae",
@@ -537,6 +606,12 @@ export const translations = {
     // Mediums
     "medium.oil-on-canvas": "Óleo sobre lienzo",
     "medium.oil-on-hardboard": "Óleo sobre tabla",
+    "artwork.nav.previous": "Obra anterior",
+    "artwork.nav.next": "Obra siguiente",
+    "artwork.fullscreen.open": "Abrir pantalla completa",
+    "artwork.fullscreen.close": "Cerrar pantalla completa",
+    "artwork.image.previous": "Imagen anterior",
+    "artwork.image.next": "Imagen siguiente",
 
     // Artwork descriptions
     "artwork.blossom-bleach-2019.description": "Belleza floral despojada de color y vitalidad. La pintura explora la paradoja de las flores blanqueadas — formas delicadas vaciadas de su brillo, hallando una gracia inesperada en la ausencia y la erosión de la intensidad cromática. 30 × 40 cm",
@@ -587,27 +662,32 @@ export const translations = {
   ru: {
     // Header & Navigation
     "nav.works": "Работы",
-    "nav.about": "О художнике",
+    "nav.about": "Обо мне",
     "nav.exhibitions": "Выставки",
     "nav.contact": "Контакт",
     "header.ralph": "Ralph Stock",
-    "header.subtitle": "Современная живопись",
+    "header.subtitle": "Живопись",
 
     // Hero Section
-    "hero.tagline": "Современная живопись",
+    "hero.tagline": "Живопись",
     "hero.description": "Картины, сформированные цветом, атмосферой и размышлением.",
-    "hero.cta": "Войти в галерею",
+    "hero.cta": "Смотреть работы",
 
     // About Section
-    "about.title": "О художнике",
+    "about.title": "Обо мне",
     "about.p1": "Добро пожаловать. Я художник, живущий в Карлсруэ, городе, где я родился и где я продолжаю жить и работать. Живопись сопровождает меня много лет и остается моим способом исследования тихого диалога между цветом, структурой и атмосферой.",
     "about.p2": "После изучения литературы и истории в Карлсруэ с 1987 по 1994 год мой фокус постепенно переместился на визуальное выражение. Живопись стала местом, где встречаются размышления, интуиция и наблюдение.",
-    "about.p3": "Когда вы смотрите на эти работы, я надеюсь, что вы переживаете их медленно. Мои картины не предназначены для немедленного объяснения. Это приглашения сделать паузу, посмотреть внимательнее и открыть что-то личное в изображении.",
+    "about.p3": "Когда вы смотрите на эти работы, я надеюсь, что вы переживаете их медленно. Мои работы не предназначены для немедленного объяснения. Это приглашения сделать паузу, посмотреть внимательнее и открыть что-то личное в изображении.",
     "about.p4": "Я член Профессиональной ассоциации художников Карлсруэ (BBK). Мои работы выставлялись в галереях и выставках, включая Kunstforum Forst, Künstlerbund Speyer и Schloss Oberschwappach.",
-    "about.p5": "Некоторые из моих картин входят в состав государственных собраний в Карлсруэ, и в 2016 году я получил премию Stollwork за живопись.",
+    "about.p5": "Некоторые из моих работ входят в состав государственных собраний в Карлсруэ, и в 2016 году я получил премию Stollwork за живопись.",
+    "about.quote": "\"To make people free is the aim of art, therefore art for me is the science of freedom.\"",
 
     // Featured Works
-    "works.title": "Избранные работы",
+    "works.title": "Небольшая серия",
+    "works.series-intro": "Эта небольшая серия следует за тихими переходами света и времени года. Три картины проходят путь от пробуждения к расцвету и отпусканию—не столько как сюжет, сколько как мягкий ритм становления.",
+    "series.il-risveglio.title-translation": "Пробуждение форм",
+    "series.primavera.title-translation": "Весна форм",
+    "series.autunno.title-translation": "Осень форм",
 
     // Exhibitions
     "exhibitions.title": "Выставки",
@@ -615,8 +695,10 @@ export const translations = {
     // Contact
     "contact.title": "Контакт",
     "contact.description": "Для запросов о выставках, приобретении или заказах, пожалуйста, свяжитесь со мной.",
+    "contact.note": "Буду рад вашему сообщению!",
     "contact.name": "Имя",
     "contact.email": "Электронная почта",
+    "contact.email-placeholder": "vash@email.ru",
     "contact.message": "Сообщение",
     "contact.send": "Отправить",
     "contact.sent": "Сообщение успешно отправлено!",
@@ -629,14 +711,16 @@ export const translations = {
     // Artist Statement
     "artist.title": "Заявление художника",
     "artist.p1": "Для меня живопись - это форма мышления через изображения. Я работаю с цветом, ритмом и композицией в поиске визуальных пространств, несущих атмосферу и присутствие.",
-    "artist.p2": "Каждая картина развивается постепенно через слои изменений. Поверхности строятся, изменяются и переоткрываются, пока изображение не достигнет тихого равновесия.",
+    "artist.p2": "Поверхности и слои выстраиваются, изменяются и открываются заново, пока изображение не достигнет тихого равновесия.",
     "artist.p3": "Вместо описания конкретных сюжетов моя работа исследует восприятие, память и тонкую связь между структурой и эмоцией.",
-    "artist.p4": "Я надеюсь, что эти картины создают моменты тишины, где зрители могут замедлиться и сформировать свою собственную связь с работой.",
+    "artist.p4": "Я надеюсь, что мои работы создают моменты тишины, где зрители могут замедлиться и сформировать свою собственную связь с работой.",
+    "artist.about-cta": "Обо мне",
 
     // Gallery
-    "gallery.title": "Архив галереи",
+    "gallery.title": "Избранные работы",
     "gallery.back": "Назад",
-    "gallery.description": "Обширная коллекция картин и работ, исследующих цвет, атмосферу и диалог между структурой и эмоцией.",
+    "gallery.description": "Обширная коллекция работ, исследующих цвет, атмосферу и диалог между структурой и эмоцией.",
+    "gallery.view-full": "Смотреть все работы",
 
     // CV
     "cv.button": "Curriculum Vitae",
@@ -654,6 +738,12 @@ export const translations = {
     // Mediums
     "medium.oil-on-canvas": "Масло на холсте",
     "medium.oil-on-hardboard": "Масло по оргалиту",
+    "artwork.nav.previous": "Предыдущая работа",
+    "artwork.nav.next": "Следующая работа",
+    "artwork.fullscreen.open": "Открыть во весь экран",
+    "artwork.fullscreen.close": "Закрыть полноэкранный режим",
+    "artwork.image.previous": "Предыдущее изображение",
+    "artwork.image.next": "Следующее изображение",
 
     // Artwork descriptions
     "artwork.blossom-bleach-2019.description": "Цветочная красота, лишённая цвета и жизненной силы. Картина исследует парадокс обесцвеченных цветов — нежные формы, лишённые яркости, обретающие неожиданную грацию в отсутствии и эрозии хроматической интенсивности. 30 × 40 см",

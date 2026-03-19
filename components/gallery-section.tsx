@@ -64,7 +64,7 @@ export function GallerySection() {
             href="/gallery"
             className="inline-block border border-foreground px-10 py-3 text-sm tracking-widest uppercase text-foreground transition-colors hover:bg-foreground hover:text-background"
           >
-            View Full Gallery
+            {t("gallery.view-full", language)}
           </Link>
         </div>
       </div>

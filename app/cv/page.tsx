@@ -1,6 +1,6 @@
 "use client"
 
-import Link from "next/link"
+import { useRouter } from "next/navigation"
 import { ArrowLeft, Download } from "lucide-react"
 import { useLanguage } from "@/providers/language-provider"
 import { t } from "@/lib/translations"
@@ -33,6 +33,7 @@ const acquisitions = [
 
 export default function CVPage() {
   const { language } = useLanguage()
+  const router = useRouter()
 
   return (
     <main className="min-h-screen bg-background">
@@ -40,13 +41,17 @@ export default function CVPage() {
 
         {/* Top nav */}
         <nav className="flex items-center justify-between mb-20">
-          <Link
-            href="/#contact"
+          <button
+            type="button"
+            onClick={() => {
+              if (window.history.length > 1) router.back()
+              else router.push("/#contact")
+            }}
             className="inline-flex items-center gap-2 text-xs text-muted-foreground hover:text-foreground transition-colors tracking-widest uppercase"
           >
             <ArrowLeft className="w-4 h-4" />
             {t("cv.back", language)}
-          </Link>
+          </button>
           <button
             onClick={() => downloadCV(language)}
             className="inline-flex items-center gap-2 border border-foreground px-6 py-2.5 text-xs tracking-widest uppercase text-foreground transition-colors hover:bg-foreground hover:text-background"

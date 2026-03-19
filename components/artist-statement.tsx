@@ -37,7 +37,7 @@ export function ArtistStatement() {
             href="/about"
             className="inline-block border border-foreground px-10 py-3 text-sm tracking-widest uppercase text-foreground transition-colors hover:bg-foreground hover:text-background"
           >
-            About the Artist
+            {t("artist.about-cta", language)}
           </Link>
         </div>
       </div>

@@ -11,12 +11,35 @@ export function Contact() {
     email: "",
     message: "",
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitState, setSubmitState] = useState<"idle" | "success" | "error">("idle")
   const { language } = useLanguage()
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission
-    console.log("Form submitted:", formData)
+    setIsSubmitting(true)
+    setSubmitState("idle")
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (!response.ok) {
+        throw new Error("Failed to send")
+      }
+
+      setSubmitState("success")
+      setFormData({ name: "", email: "", message: "" })
+    } catch {
+      setSubmitState("error")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -26,8 +49,11 @@ export function Contact() {
           {t("contact.title", language)}
         </h2>
         
-        <p className="text-center text-muted-foreground mb-20 leading-relaxed">
+        <p className="text-center text-muted-foreground leading-relaxed">
           {t("contact.description", language)}
+        </p>
+        <p className="text-center text-muted-foreground mb-20 leading-relaxed mt-2">
+          {t("contact.note", language)}
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-8">
@@ -56,7 +82,7 @@ export function Contact() {
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
               className="w-full border-b border-border bg-transparent py-3 text-foreground placeholder:text-muted-foreground focus:border-foreground focus:outline-none transition-colors"
-              placeholder="your@email.com"
+              placeholder={t("contact.email-placeholder", language)}
               required
             />
           </div>
@@ -79,10 +105,17 @@ export function Contact() {
           <div className="text-center pt-4">
             <button
               type="submit"
+              disabled={isSubmitting}
               className="inline-block border border-foreground px-10 py-3 text-sm tracking-widest uppercase text-foreground transition-colors hover:bg-foreground hover:text-background"
             >
               {t("contact.send", language)}
             </button>
+            {submitState === "success" ? (
+              <p className="mt-4 text-sm text-foreground/80">{t("contact.sent", language)}</p>
+            ) : null}
+            {submitState === "error" ? (
+              <p className="mt-4 text-sm text-destructive">{t("contact.error", language)}</p>
+            ) : null}
           </div>
         </form>
 

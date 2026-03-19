@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
+import { useRouter } from "next/navigation"
 import { artworks } from "@/lib/artworks"
 import { ArrowLeft } from "lucide-react"
 import { useLanguage } from "@/providers/language-provider"
@@ -9,18 +10,24 @@ import { t } from "@/lib/translations"
 
 export default function GalleryPage() {
   const { language } = useLanguage()
+  const router = useRouter()
+  const sortedArtworks = [...artworks].sort((a, b) => Number(b.year) - Number(a.year))
 
   return (
     <main className="min-h-screen bg-background">
       {/* Header */}
       <header className="px-6 md:px-12 lg:px-16 pt-28 pb-8 border-b border-border">
-        <Link
-          href="/"
+        <button
+          type="button"
+          onClick={() => {
+            if (window.history.length > 1) router.back()
+            else router.push("/")
+          }}
           className="inline-flex items-center gap-2 text-xs text-muted-foreground hover:text-foreground transition-colors tracking-widest uppercase mb-6"
         >
           <ArrowLeft className="w-4 h-4" />
           {t("gallery.back", language)}
-        </Link>
+        </button>
         <h1 className="font-serif text-3xl md:text-4xl text-foreground tracking-tight">
           {t("gallery.title", language)}
         </h1>
@@ -29,14 +36,14 @@ export default function GalleryPage() {
         </p>
       </header>
 
-      {/* Gallery — masonry grid layout with 2cm side margins and 1cm gaps */}
-      <section className="py-0 px-[56px] pb-[3cm]">
-        <div className="mt-10 columns-1 sm:columns-2 lg:columns-3 gap-7">
-          {artworks.map((artwork) => (
+      {/* Gallery — columns layout: 1cm gap between all paintings (vertical via margin, horizontal via column-gap) */}
+      <section className="py-0 px-[1cm] pb-[3cm]">
+        <div className="mt-10 columns-1 sm:columns-2 lg:columns-3 gap-[1cm] [column-fill:balance]">
+          {sortedArtworks.map((artwork) => (
             <Link
               key={artwork.id}
               href={`/works/${artwork.slug}`}
-              className="group block mb-7 break-inside-avoid"
+              className="group block mb-[1cm] break-inside-avoid"
             >
                 <article className="cursor-pointer">
                   <div className="painting-frame-gallery overflow-hidden relative">
