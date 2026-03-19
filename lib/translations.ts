@@ -148,7 +148,7 @@ export const translations = {
     // About Section
     "about.title": "Über mich",
     "about.p1": "Willkommen. Ich bin ein in Karlsruhe ansässiger Maler, der Stadt, in der ich geboren wurde und in der ich weiterhin lebe und arbeite. Die Malerei begleitet mich seit vielen Jahren und bleibt meine Art, den stillen Dialog zwischen Farbe, Struktur und Atmosphäre zu erforschen.",
-    "about.p2": "Nach dem Studium von Literaturwissenschaften und neuerer Geschichte in Karlsruhe von 1987 bis 1994 verlagerte sich mein Fokus allmählich auf den visuellen Ausdruck. Die Malerei wurde zum Ort, an dem Reflexion, Intuition und Beobachtung zusammenkommen.",
+    "about.p2": "Nach dem Studium der Literaturwissenschaften und neuerer Geschichte in Karlsruhe von 1987 bis 1994 verlagerte sich mein Fokus allmählich auf den visuellen Ausdruck. Die Malerei wurde zum Ort, an dem Reflexion, Intuition und Beobachtung zusammenkommen.",
     "about.p3": "Wenn Sie sich diese Werke ansehen, hoffe ich, dass Sie sie langsam erleben. Meine Werke sollen sich nicht sofort selbst erklären. Sie sind Einladungen, innezuhalten, genauer hinzuschauen und etwas Persönliches im Bild zu entdecken.",
     "about.p4": "Ich bin Mitglied der Berufsvereinigung Bildender Künstler Karlsruhe (BBK). Meine Arbeiten wurden in Galerien und Ausstellungen gezeigt, darunter Kunstforum Forst, Künstlerbund Speyer und Schloss Oberschwappach.",
     "about.p5": "Einige meiner Werke sind Teil öffentlicher Sammlungen in Karlsruhe, und 2016 erhielt ich den Stollwork-Preis für Malerei.",
